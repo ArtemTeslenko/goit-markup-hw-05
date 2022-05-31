@@ -166,7 +166,11 @@ body {
   color: var(--accent-color);
 }
 
-.site-nav .current-page .link::after{
+.site-nav .current-page {
+  color: var(--accent-color);
+}
+
+.site-nav .current-page.link::after{
   position: absolute;
   content: '';
   height: 4px;
@@ -621,7 +625,8 @@ body {
 }
 
 .filter .button:hover,
-.filter .button:focus {
+.filter .button:focus,
+.filter .current-filter {
   color: var(--white-color);
   background-color: var(--accent-color);
 
